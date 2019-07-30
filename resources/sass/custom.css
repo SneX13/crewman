@@ -1,0 +1,24 @@
+bodu {
+    font-family: 'Roboto', sans-serif;
+}
+.v-btn--active .v-btn__content, .v-btn:hover, .v-btn:focus {
+    color: #ffffff !important;
+}
+.v-btn--active:before, .v-btn:focus:before, .v-btn:hover:before {
+    background:#25499c;
+    opacity: 1;
+}
+.theme--light.v-btn {
+    color: #25499c;
+}
+
+.theme--light.v-table tbody tr:hover:not(.v-datatable__expand-row) {
+    cursor: pointer;
+    background: #25499c3d;
+}
+.theme--light.v-table tbody tr:not(.v-datatable__expand-row).inactive{
+    cursor: not-allowed;
+    background-color: #eee;
+}
+
+
