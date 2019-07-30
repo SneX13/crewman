@@ -62,8 +62,7 @@ php artisan serve
 
 ## Diagram
 
-```
-```
+![ER Diagram](https://github.com/SneX13/crewman/blob/master/public/img/crewman-diagram.png?raw=true "Crewman Diagram”)
 
 ###Todo
 
