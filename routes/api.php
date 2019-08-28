@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::apiResource('employees', 'EmployeeController',
     array('only' => array('index', 'show')));
+Route::get('employees/{employee_id}/current_employment', 'EmployeeController@showSortedCurrentEmployment');
