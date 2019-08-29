@@ -77,7 +77,7 @@ class EmployeeController extends Controller
         return $currentEmployment->map(function ($item) {
             return collect($item)->merge([
                 'assignments' => $item['assignments']->sortByDesc(function ($assignment) {
-                    return collect($assignment['roles'])->sortByDesc('start_date');
+                    return collect($assignment['roles'])->max('start_date');
                 })->values()->all()
             ]);
         });
